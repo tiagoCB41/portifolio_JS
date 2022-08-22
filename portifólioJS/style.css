@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(./fotos/background.png);
+  background-size: cover;
+}
+
+#title{
+    color: rgb(185, 185, 185);
+    margin-top: 40px;
+}
+
+.flipper{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  transition: transform 0.8s;
+	
+}
+
+
+
+.flip{
+	transform: rotateX(180deg);
+}
+
+
+        
+
+.front,
+.back{
+    border-radius: 25px;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.13);
+    height: 400px;
+    width: 600px;
+    text-align: center;  
+    backface-visibility: hidden;  
+
+}
+
+
+.back{
+	transform: rotateX(180deg);
+}
+
+#imgBack{
+  height: 100px;
+  width: auto;
+  margin-top: 16%;
+}
+
+label          {
+    color:#999; 
+    font-size:18px;
+    font-weight:normal;
+    position:absolute;
+    pointer-events:none;
+
+    top:10px;
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+  }
+  
+  input:focus ~ label, input:valid ~ label    {
+    top:-28px;
+    font-size:20px;
+    color:#5264AE;
+  }
+  .input-container{
+    position: absolute;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    top: 42%;
+  }
+
+  #inputEmail{
+    height: 33px;
+    width: 55%;
+    border-radius: 18px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.877);
+  }
+
+  .btn{
+   float: right;
+   position: relative;
+   margin-left: -35px;
+   height: 42px;
+   width: 60px;
+   border-radius: 12px;
+   background-color: rgba(158, 158, 158, 0.980);
+   cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #555555;
+    color: white;
+  }
+
+
+  .buttonB{
+    height: 50px;
+    width: 100px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 7%;
+    background-color: rgba(255, 255, 255, 0.486);
+  }
+  
+  .buttonB:hover {
+    background-color: #555555;
+    color: white;
+    
+  }
+
+
+  .col-2{
+    position: absolute;
+    bottom: 0%;
+    right: 1%;
+    font-size: 15px;
+    font-style: italic;
+    color:#2f2d96;
+  }
+  
+  #msgError{
+    color: #da0000;
+    margin-block-start: 9%;
+    
+  }
+
+  /*ASS: tiagoCB *\
+  
+  
+
+  
+
